@@ -1,0 +1,334 @@
+@font-face{
+font-family: "setofont";
+src:url(setofont.ttf);
+}
+body
+{
+background-image:url('123.jpg');
+width : 90%;
+margin-right: auto;
+margin-left: auto;
+background-color: #fff;
+border: 10px dashed #A16B47 ;
+}
+.header{
+height:400px;
+width:100%;
+clear:both;
+background-color: white;
+}
+.main{
+height: 3700px;
+width: 100%;
+background-color:  #F5F5DC;
+}
+.contactme{
+	margin-top: 100px;
+	position:relative;
+	left:35%;
+	width: 30%;
+	height:600px;
+	background-color: white;
+	border: 10px dashed #A16B47 ;
+}
+.information{
+position:relative;
+float:right;
+float:bottom;
+height:150px;
+margin:20px;
+}
+.title{
+font-size: 72px;
+color:#4D3900;
+font-weight: bold;
+font-style: italic;
+text-align:center;
+margin-top: -250px;
+}
+.timeline h2{
+font-size:56px;
+color:#8B4513 ;
+}
+.timelinep{
+font-size:36px;
+font-weight:bold;
+}
+img.square {
+width: 200px;
+border-radius: 50%;
+border: 1px solid rgba(255,0,0,1.00);
+margin-top:100px;margin-left:100px;
+}
+.picmove{
+color: #474E51;
+}
+.picmove:hover
+{
+animation: picmove 1s ease;
+animation-iteration-count: 1;
+}
+.quotes{
+font-size: 48px;
+font-weight: bold;
+margin-left:400px;
+}
+.quotes2{
+width:300px;
+font-size: 48px;
+font-weight: bold;
+margin-left:700px;
+opacity: 0;
+margin-top: -100px;
+}
+.quotes2:hover{
+opacity: 1;
+}
+.fb{
+margin-top:-50px;
+position: absolute;
+margin-left:-300px;
+width:120px;
+}
+.ig{
+position: absolute;
+margin-left:-180px;
+margin-top:-30px;
+width:80px;
+}
+.git{
+position: absolute;
+margin-left:-80px;
+margin-top:-30px;
+width:80px;
+}
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+.column {
+width: 50%;
+}
+}
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+.column {
+width: 100%;
+}
+}
+@keyframes picmove
+{
+15%
+{
+transform: translateY(60px);
+}
+30%
+{
+transform: translateX(60px);
+}
+50%
+{
+transform: translateY(-60px);
+}
+65%
+{
+transform: translateX(-60px);
+}
+80%
+{
+transform: translateY(30px);
+}
+90%
+{
+transform: translateX(30px);
+}
+95%
+{
+transform: translateY(-30px);
+}
+100%
+{
+transform: translateX(-30px);
+}
+}
+.bt
+{
+position:relative;
+float:right;
+float:top;
+left:-50px;
+top:200px;
+background-color:transparent;
+border: 3px #D2691E solid; /* 去掉邊框 */
+color: #D2691E;
+font-size: 30px; /* 改字體大小 */
+padding: 10px; /* 按鈕內邊距離 */
+width: 180px;
+height:60px;  /* 按鈕寬度 */
+border-radius: 5px; /* 圓角5px */
+}
+.bt span
+{
+transition: 0.5s; /* 過渡0.5秒 */
+text-shadow: 0 1px 1px rgba(0,0,0,.4),0 1px 2px rgba(0,0,0,.2);
+}
+.bt:hover
+{
+cursor:pointer;
+background-color: rgba(255,255,255,0.2);
+}
+.bt:hover span
+{
+padding-right: 25px;
+/* 當鼠標在按鈕上時span內邊右距離25px */
+}
+.bt span:after{
+content: "»"; /* span後面追加內容為» */
+opacity: 0; /* 透明度為0 */
+transition: 0.5s; /* 加個0.5秒的過渡 */
+}
+.bt:hover span:after
+{
+opacity: 1; /* 透明度為1，就是顯示 */
+}
+.cirbox
+{
+display: flex;
+align-items: flex-start;
+font-size :36px;
+width: 100%;
+}
+.cir1
+{
+width: 300px;
+line-height: 0px;
+font-size: 30px;
+}
+.cir2
+{
+width: 300px;
+line-height: 0px;
+font-size: 30px;
+}
+.cir3
+{
+width: 300px;
+line-height: 0px;
+font-size: 30px;
+}
+.word
+{
+font-size: 36px;
+color:#CD853F;
+margin-left: 80px;
+font-weight: bold;
+}
+.abox{
+padding: 50px 100px;
+z-index: 99;
+}
+.p1{
+font-size: 36px;
+line-height: 20px;
+}
+.p2{
+font-size:25px;
+color:#DAA520;
+margin-top: 10px;
+}
+* {
+box-sizing: border-box;
+font-family: "setofont";
+}
+.accordion {
+position: relative;
+left:10%;
+background-color: 	#DEB887;
+color: #444;
+cursor: pointer;
+padding: 18px;
+width: 80%;
+border: none;
+text-align: left;
+outline: none;
+text-align: center;
+font-size: 25px;
+transition: 0.4s;
+font-weight: bold;
+color:	#8B4513;
+}
+.active, .accordion:hover {
+background-color: #D2B48C;
+}
+.panel {
+position: relative;
+left:10%;
+width: 80%;
+padding: 0 18px;
+display: none;
+background-color: white;
+overflow: hidden;
+}
+.panelp{
+color:	#D2691E;
+font-size:28px;
+text-align: center;
+}
+.experience {
+  max-width: 1000px;
+  margin: auto;
+  padding-top: 80px;
+}
+.row,
+.row {
+  margin: 8px -16px;
+}
+.row > .column {
+  padding: 8px;
+}
+.column {
+  float: left;
+  width: 33%;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.content {
+  background-color: white;
+  padding: 10px;
+}
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+.profilep{
+	text-align: center;
+	font-size: 36px;
+	color:	#8B4513;
+}
+.profileimg{
+	width:100%;
+}
+.contentp{
+	font-size: 28px;
+	line-height: 40px;
+}
+.contactp{
+	color:	#CD853F;
+	font-size: 36px;
+	text-align: center;
+	line-height: 50px;
+	font-weight: bold;
+}
+.mailp{
+	color: 	#D2691E;
+	font-weight: bold;
+	font-size: 36px;
+	padding-left: 170px;	
+}
