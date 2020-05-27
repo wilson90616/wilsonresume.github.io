@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>wilson</title>
+        <script type="text/javascript" src="js/FUN.js"></script>
+        <link rel="stylesheet" href="css/index.css"/>
+        <link rel="stylesheet" href="css/skill.css"/>
+    </head>
+    <body>
+        
+        <div class="header">
+            <img class="square picmove" src="img/me.jpg">
+            <button class="bt"  onclick="location.href='https://wilson90616.github.io/introduce.github.io/'"><span>個人網頁</span></button>
+            <p class="title">王勤中</p>
+            <p class="quotes">「麻雀雖小，</p>
+            <p class="quotes2">武漢肺炎。」</p>
+            <div class="information">
+                <a href="https://www.facebook.com/profile.php?id=100002086409145"><img class="fb" src="img/fb.png"></a>
+                <a href="https://www.instagram.com/wilson_0616/?hl=zh-tw"><img class="ig" src="img/ig.png"></a>
+                <a href="https://www.facebook.com/profile.php?id=100002086409145"><img class="git" src="img/github.png"></a>
+            </div>
+        </div>
+        <div class="main">
+            <div class="cirbox" style="display: flex;justify-content:space-around;">
+                <div class="cir1">
+                    <canvas id="canvas" width="300" height="300"></canvas>
+                    <div class="word">程式能力</div>
+                </div>
+                <div class="cir2">
+                    <canvas id="canvas2" width="300" height="300"></canvas>
+                    <div class="word">文書處理</div>
+                </div>
+                <div class="cir3">
+                    <canvas id="canvas3" width="300" height="300"></canvas>
+                    <div class="word">網頁排版</div>
+                </div>
+            </div>
+            <div class="abox">
+                <div class="skillbox" >
+                    <p class="p1">Html5/Css3</p>
+                    <p class="p2">80%</p>
+                    <div class="skill" >
+                        <div class="skill_level html" ></div>
+                    </div>
+                </div>
+                <div class="skillbox">
+                    <p class="p1">Java</p>
+                    <p class="p2">65%</p>
+                    <div class="skill">
+                        <div class="skill_level java"></div>
+                    </div>
+                </div>
+                <div class="skillbox">
+                    <p class="p1">Python</p>
+                    <p class="p2">50%</p>
+                    <div class="skill" >
+                        <div class="skill_level python"></div>
+                    </div>
+                </div>
+                <div class="skillbox">
+                    <p class="p1">C#</p>
+                    <p class="p2">60%</p>
+                    <div class="skill">
+                        <div class="skill_level c"></div>
+                    </div>
+                </div>
+                <div class="skillbox">
+                    <p class="p1">ppt/word</p>
+                    <p class="p2">70%</p>
+                    <div class="skill">
+                        <div class="skill_level pw"></div>
+                    </div>
+                </div>
+            </div>
+            <button class="accordion">大一上</button>
+            <div class="panel">
+                <p class="panelp">管理學:機器人學習課程志工</p>
+            </div>
+            <button class="accordion">大一下</button>
+            <div class="panel">
+                <p class="panelp">企業概論:黑孩子咖啡義賣</p>
+            </div>
+            <button class="accordion">大二上</button>
+            <div class="panel">
+                <p class="panelp">網路程式設計:夢想家蛋糕坊-後端</p>
+            </div>
+            <script> var acc = document.getElementsByClassName("accordion");
+            var i;
+            for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+            panel.style.display = "none";
+            } else {
+            panel.style.display = "block";
+            }
+            });
+            }</script>
+            
+            <div class="experience">
+                <div class="row">
+                    <div class="column">
+                        <div class="content">
+                            <img src="img/profile1.jpg" class="profileimg">
+                            <h3 class="profilep">宿營小隊隊聚</h3>
+                            <p class="contentp">大二宿營擔任隊輔組，帶到了我覺得是最棒的一個隊!很開心也覺得很幸運自己能帶到他們，讓我在上營壓力不會很大。<br><br></p>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="content">
+                            <img src="img/profile2.jpg" class="profileimg">
+                            <h3 class="profilep">食字路口</h3>
+                            <p class="contentp">大二上擔任食字路口隊輔，這個活動看似簡單，但其實要照顧10幾個人，怕有些人沒有吃到，或被車子撞還是走散...等，還是滿有難度的。</p>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="content">
+                            <img src="img/profile3.jpg" class="profileimg">
+                            <h3 class="profilep">22家家聚</h3>
+                            <p class="contentp">在二上時跟很多朋友一起連家去吃家聚，我們這次訂在田寄發爺，因為跟很多朋友一起去，所以也不用顧面子，直接爆吃一波。<br><br></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    
+                    <div class="column">
+                        <div class="content">
+                            <img src="img/profile4.jpg" class="profileimg">
+                            <h3 class="profilep">宿營隊輔組</h3>
+                            <p class="contentp">大二上去宿營擔任隊輔組，雖然練宿時真的很累很操，但是認識了很多好朋友而且活動辦得也很成功，學到了很多東西，付出的很值得，希望下次有時間的話也能再去宿營一次。<br><br></p>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="content">
+                            <img src="img/profile5.jpg" class="profileimg">
+                            <h3 class="profilep">密室逃脫</h3>
+                            <p class="contentp">這是我大二時在活動股所負責的活動，從一開始想主題，劇情到後面開始佈關跟場控，雖然耗費了很大的心力跟時間，但我學到了如何溝通、編列預算，跟美術製作...等，努力都有得到回報。</p>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="content">
+                            <img src="img/profile6.jpg" class="profileimg">
+                            <h3 class="profilep">資管之夜</h3>
+                            <p class="contentp">大二活動股是我加過有史以來最棒的團體!跟好朋友一起進去辦活動真的很好玩，也學到了很多，很多人也在大三選擇接幹，一起繼續辦活動，大家都想一起讓整個資管系慢慢變好。<br><br></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contactme">
+            <p class="contactp">電話:<br>0988436385</p>
+            <p class="contactp">LINEID:<br>wilson90616</p>
+            <p class="contactp">地址:<br>桃園市中壢區大仁一街6樓之9</p>
+            <a href="mailto:wilson90616@gmai1.com" class="mailp">點此寫信</a>
+            </div>
+        </div>
+    </body>
+</html>
